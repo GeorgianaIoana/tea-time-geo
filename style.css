@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: url(./images/tea-table.jpg) no-repeat center center / cover;
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+  font-size: 70px;
+  color: #ece4e1;
+  font-family: 'Nanum Gothic';
+}
+
+.tea {
+  grid-area: 1/1/2/2;
+  justify-self: end;
+  align-self: end;
+  margin-bottom: 50px;
+  margin-right: 60px;
+  text-shadow: 15px 15px 30px #ece4e1;
+}
