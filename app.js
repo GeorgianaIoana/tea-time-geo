@@ -62,4 +62,20 @@ function updateNowHour() {
     stopBackgroundMusic();
   }
 }
+document.addEventListener('DOMContentLoaded', function () {
+  const recipes = {
+    1: 'Chamomile Tea: 1 tsp chamomile flowers, 1 cup boiling water, honey to taste.',
+    2: 'Green Tea: 1 tsp green tea leaves, 1 cup hot water, lemon slice.',
+    3: 'Peppermint Tea: 1 tsp dried peppermint leaves, 1 cup boiling water, honey to taste.',
+    4: 'Ginger Tea: 1 tsp grated ginger, 1 cup boiling water, lemon slice, honey to taste.',
+    5: 'Hibiscus Tea: 1 tsp dried hibiscus flowers, 1 cup boiling water, honey to taste.',
+    6: 'Black Tea: 1 tsp black tea leaves, 1 cup boiling water, milk and sugar to taste.',
+    0: 'Lemon Balm Tea: 1 tsp dried lemon balm leaves, 1 cup boiling water, honey to taste.' // duminica
+  };
 
+  let today = new Date().getDay();
+  today = today === 0 ? 7 : today; // Convert duminica (0) to 7
+
+  const recipeText = document.getElementById('recipe-text');
+  recipeText.innerText = recipes[today];
+});
