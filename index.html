@@ -8,12 +8,10 @@
     content="width=device-width, initial-scale=1.0"
   >
   <title>Tea Time</title>
-
   <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Nanum Gothic"
   >
-
   <link
     rel="stylesheet"
     href="style.css"
@@ -22,7 +20,6 @@
 
 <body>
   <div class="tea">
-
     <div>
       <audio
         id="background-music"
@@ -34,11 +31,23 @@
           type="audio/mpeg"
         >
       </audio>
-
-      <button id="stop-alarm">Get an invitation</button>
     </div>
-
     <p class="tea-time"></p>
+  </div>
+
+  <!-- Button to open the hover effect -->
+  <div class="take-a-seat-container">
+    <button
+      id="stop-alarm"
+      class="take-a-seat-button"
+    >Take a Seat</button>
+    <div class="hover-content">
+      <a
+        href="https://us05web.zoom.us/j/3917195723?pwd=RUkwRUNHM216RVoxMjdlampSK2hDUT09"
+        target="_blank"
+        class="hover-link"
+      >Join Tea Time Meeting</a>
+    </div>
   </div>
 
   <script src="app.js"></script>

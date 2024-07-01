@@ -3,17 +3,80 @@ body {
   height: 100vh;
   background: url(./images/tea-table.jpg) no-repeat center center / cover;
   display: grid;
-  grid-template: 1fr 1fr/1fr 1fr;
+  grid-template: 1fr 1fr / 1fr 1fr;
   font-size: 70px;
   color: #ece4e1;
   font-family: 'Nanum Gothic';
 }
 
 .tea {
-  grid-area: 1/1/2/2;
+  grid-area: 1 / 1 / 2 / 2;
   justify-self: end;
   align-self: end;
   margin-bottom: 50px;
   margin-right: 60px;
   text-shadow: 15px 15px 30px #ece4e1;
+}
+
+.take-a-seat-container {
+  position: fixed;
+  bottom: 70px;
+  right: 110px;
+  text-align: center;
+}
+
+.take-a-seat-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff7e5f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+.take-a-seat-button:hover {
+  background-color: #feb47b;
+  transform: translateY(-3px);
+}
+
+.hover-content {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url('./images/table-invitation.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+  justify-content: center;
+}
+
+.take-a-seat-container:hover .hover-content,
+.take-a-seat-container:focus-within .hover-content {
+  display: block;
+}
+
+.hover-link {
+  color: #000;
+  margin-bottom: 40px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.hover-link:hover {
+  text-decoration: underline;
 }

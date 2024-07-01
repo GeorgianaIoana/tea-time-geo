@@ -1,13 +1,15 @@
 const teaTime = document.querySelector('.tea-time');
+const audio = document.getElementById('background-music');
+const stopAlarm = document.getElementById('stop-alarm');
 
 function getTime() {
   const date = new Date();
   let hours = date.getHours();
   let minutes = date.getMinutes();
   let seconds = date.getSeconds();
-  let nowTime = `${hours.toString().padStart(2, `0`)}:${minutes
+  let nowTime = `${hours.toString().padStart(2, '0')}:${minutes
     .toString()
-    .padStart(2, `0`)}:${seconds.toString().padStart(2, `0`)}`;
+    .padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 
   return nowTime;
 }
@@ -16,17 +18,14 @@ setInterval(function () {
   teaTime.innerText = getTime();
 }, 1000);
 
-const audio = document.getElementById('background-music');
-const stopAlarm = document.getElementById('stop-alarm');
-
 function playBackgroundMusic() {
-  if (audio.pause) {
+  if (audio.paused) {
     audio.play();
   }
 }
 
 function stopBackgroundMusic() {
-  if (!audio.pause) {
+  if (!audio.paused) {
     audio.pause();
   }
 }
@@ -63,7 +62,4 @@ function updateNowHour() {
     stopBackgroundMusic();
   }
 }
-/*stopAlarm.addEventListener('click', function () {
-  audio.pause();
-});
-*/
+
