@@ -64,13 +64,13 @@ function updateNowHour() {
 }
 document.addEventListener('DOMContentLoaded', function () {
   const recipes = {
-    1: 'Chamomile Tea: 1 tsp chamomile flowers, 1 cup boiling water, honey to taste.',
-    2: 'Green Tea: 1 tsp green tea leaves, 1 cup hot water, lemon slice.',
-    3: 'Peppermint Tea: 1 tsp dried peppermint leaves, 1 cup boiling water, honey to taste.',
-    4: 'Ginger Tea: 1 tsp grated ginger, 1 cup boiling water, lemon slice, honey to taste.',
-    5: 'Hibiscus Tea: 1 tsp dried hibiscus flowers, 1 cup boiling water, honey to taste.',
-    6: 'Black Tea: 1 tsp black tea leaves, 1 cup boiling water, milk and sugar to taste.',
-    0: 'Lemon Balm Tea: 1 tsp dried lemon balm leaves, 1 cup boiling water, honey to taste.' // duminica
+    1: 'Monday Chamomile Tea: 1 tsp chamomile flowers, 1 cup boiling water, honey to taste.',
+    2: 'Tuesday Green Tea: 1 tsp green tea leaves, 1 cup hot water, lemon slice.',
+    3: 'Wednesday Peppermint Tea: 1 tsp dried peppermint leaves, 1 cup boiling water, honey to taste.',
+    4: 'Thursday Ginger Tea: 1 tsp grated ginger, 1 cup boiling water, lemon slice, honey to taste.',
+    5: 'Friday Hibiscus Tea: 1 tsp dried hibiscus flowers, 1 cup boiling water, honey to taste.',
+    6: 'Saturday Black Tea: 1 tsp black tea leaves, 1 cup boiling water, milk and sugar to taste.',
+    0: 'Sunday Lemon Balm Tea: 1 tsp dried lemon balm leaves, 1 cup boiling water, honey to taste.', // duminica
   };
 
   let today = new Date().getDay();
