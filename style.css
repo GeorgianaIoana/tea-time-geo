@@ -18,25 +18,32 @@ body {
 
 .take-a-seat-container {
   position: fixed;
-  bottom: 70px;
+  bottom: 40px;
   right: 110px;
   text-align: center;
 }
 
 .take-a-seat-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #ff7e5f;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s, transform 0.3s;
-  width: auto;
-  height: auto;
-  text-align: center;
-}
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+  }
 
 .take-a-seat-button:hover {
   background-color: #feb47b;
@@ -45,22 +52,22 @@ body {
 
 .hover-content {
   display: none;
-  position: absolute;
-  bottom: 100%;
+  position:absolute;
+  bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url('./images/table-invitation.jpg');
+  background-image: url('./images/tea-cup-flowers-front-view.jpg');
   background-size: cover;
-  background-position: center;
-  width: 200px;
-  height: 200px;
+  background-position: left;
+  width: 250px;
+  height: 250px;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
   z-index: 1;
   color: #fff;
-  justify-content: center;
+  justify-content: center;;
 }
 
 .take-a-seat-container:hover .hover-content,
@@ -69,10 +76,12 @@ body {
 }
 
 .hover-link {
-  color: #000;
-  margin-bottom: 40px;
-  text-decoration: none;
+  color: #3a1a1a;
   font-size: 16px;
+  text-align: right;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
 }
 
 .hover-link:hover {
@@ -87,19 +96,26 @@ body {
   text-align: center;
 }
 
-.recipe-button {
-  padding: 8px 16px;
-  font-size: 14px;
-  background-color: #ff7e5f;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
+.recipe-button  {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s, transform 0.3s;
-  width: auto;
-  height: auto;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
   text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
 }
 
 .recipe-button:hover {
@@ -118,7 +134,7 @@ body {
   background-image: url('./images/tea-recipe.jpg');
   background-size: cover;
   background-position: center;
-  color: #000;
+  color: #3a1a1a;
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -184,12 +200,13 @@ body {
   background-image: url('./images/tea-history.jpg');
   background-size: cover;
   background-position: center;
-  color: #000;
-  padding: 15px;
+  color: #3a1a1a;
+  padding: 38px;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
+  text-align: left;
   justify-content: center;
+  font-size: small;
 }
 
 .origin-container:hover .origin-content,
@@ -207,4 +224,11 @@ body {
   font-size: 14px;
   margin: 0;
   padding-top: 20px;
+}
+
+.origin-content a {
+  font-size: 14px;
+  margin-top:auto;
+  color: #3a1a1a;
+  padding-bottom: 100px;
 }
