@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
     4: 'Thursday Ginger Tea: 1 tsp grated ginger, 1 cup boiling water, lemon slice, honey to taste.',
     5: 'Friday Hibiscus Tea: 1 tsp dried hibiscus flowers, 1 cup boiling water, honey to taste.',
     6: 'Saturday Black Tea: 1 tsp black tea leaves, 1 cup boiling water, milk and sugar to taste.',
-    0: 'Sunday Lemon Balm Tea: 1 tsp dried lemon balm leaves, 1 cup boiling water, honey to taste.', // duminica
+    7: 'Sunday Lemon Balm Tea: 1 tsp dried lemon balm leaves, 1 cup boiling water, honey to taste.',
   };
 
   let today = new Date().getDay();
