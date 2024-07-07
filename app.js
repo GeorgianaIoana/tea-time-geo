@@ -30,18 +30,18 @@ function stopBackgroundMusic() {
   }
 }
 
-const oraFixa = new Date();
-oraFixa.setHours(15, 0, 0);
+const fixedHour = new Date();
+fixedHour.setHours(15, 0, 0);
 let nowHour = new Date();
 
 function updateNowHour() {
   nowHour = new Date();
 }
-let delay = oraFixa - nowHour;
+let delay = fixedHour - nowHour;
 
 if (delay < 0) {
-  oraFixa.setDate(oraFixa.getDate() + 1);
-  delay = oraFixa - nowHour;
+  fixedHour.setDate(fixedHour.getDate() + 1);
+  delay = fixedHour - nowHour;
 }
 
 setTimeout(function () {
@@ -54,9 +54,9 @@ function updateNowHour() {
   const nowTime =
     now.getHours() * 3600 + now.getMinutes() * 60 + now.getSeconds();
   const fixedTime =
-    oraFixa.getHours() * 3600 +
-    oraFixa.getMinutes() * 60 +
-    oraFixa.getSeconds();
+    fixedHour.getHours() * 3600 +
+    fixedHour.getMinutes() * 60 +
+    fixedHour.getSeconds();
 
   if (nowTime === fixedTime) {
     stopBackgroundMusic();
