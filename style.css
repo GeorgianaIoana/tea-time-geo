@@ -53,7 +53,7 @@ body {
 .hover-content {
   display: none;
   position:absolute;
-  bottom: 20%;
+  bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
   background-image: url('./images/tea-cup-flowers-front-view.jpg');
